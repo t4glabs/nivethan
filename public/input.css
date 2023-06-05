@@ -11,10 +11,21 @@
     background: #f0ebdb;
 }
 
-
+.font-size-heading{
+    font-size: 18px;
+}
 .text-color{
     color: #102d5e;
 }
 
+.heading-text-color{
+    color: #1981d4;
+}
+
+.li-text-color{
+    color: #2a6bc5;
+
+}
 .font-family-class{
-    font-family: 'Nunito', sans-serif;}
+    font-family: 'Nunito', sans-serif;
+}

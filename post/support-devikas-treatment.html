@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	<link href="output.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+	<link href="../output.css" rel="stylesheet">
 </head>
 
 <body class="bg-stone-50 font-sans leading-normal tracking-normal font-serif">
@@ -16,7 +17,7 @@
 		<div x-data="{ open: false }"
 			class="p-2 flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
 			<div class="flex flex-row items-center justify-between">
-				<a href="index.html"><img
+				<a href="../index.html"><img
 						src="https://i0.wp.com/nivethan.in/wp-content/uploads/2019/11/cropped-20191103_223611-3.jpg?w=2880"
 						alt="logo" class="h-full w-72"></a>
 
@@ -35,7 +36,7 @@
 			<nav :class="{'flex': open, 'hidden': !open}"
 				class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 				<a class="px-4 py-2 mt-2 text-base font-semibold text-black rounded-lg  md:mt-0 hover:text-sky-600 hover:bg-gray-50 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="index.html">Home</a>
+					href="../index.html">Home</a>
 				<div @click.away="open = false" class="relative" x-data="{ open: false }">
 					<button @click="open = !open"
 						class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:bg-gray-50 hover:text-sky-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
@@ -56,11 +57,11 @@
 						class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
 						<div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="overview.html">Overview</a>
+								href="../overview.html">Overview</a>
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="our-partners.html">Our Partners</a>
+								href="../our-partners.html">Our Partners</a>
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="legal-info-financials.html">Legal Information & financial</a>
+								href="../legal-info-financials.html">Legal Information & financial</a>
 						</div>
 					</div>
 				</div>
@@ -85,55 +86,90 @@
 						class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
 						<div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="nurture-merit.html">Nurture Merit</a>
+								href="../nurture-merit.html">Nurture Merit</a>
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="mission-thalassemia.html">Mission Thalassemia</a>
+								href="../mission-thalassemia.html">Mission Thalassemia</a>
 							<a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-								href="economic-development-initiatives.html">Economic Development Initiatives</a>
+								href="../economic-development-initiatives.html">Economic Development Initiatives</a>
 						</div>
 					</div>
 				</div>
 				<!-- **** -->
 				<a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="blog.html">Blog</a>
+					href="../blog.html">Blog</a>
 				<a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="donate.html">Donate</a>
+					href="../donate.html">Donate</a>
 				<a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50  dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-					href="contact.html">Contact Us</a>
+					href="../contact.html">Contact Us</a>
 			</nav>
 		</div>
 	</div>
 	<!-- ******* -->
 
+	<section class="font-family-class px-6 py-6 lg:px-28 lg:py-12 bg-white">
+		<h3 class="mt-3 text-lg text-black font-bold">
+			Dear Friends,</h3>
+		<h3 class="mt-3 text-lg text-black font-bold">
+			Greetings from Nivethan!</h3>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Hope you and your family are keeping healthy and
+			safe during the pandemic. </p>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Nivethan Trust has an <strong
+				class="font-bold text-black">“Appeal to urgently
+				support for the treatment of a Medical student Ms Devika BJ who is diagnosed with Leukemia and is
+				requiring
+				Bone Marrow Transplant”,</strong> which has to be done in December 2020. </p>
 
-	<div class="bg-white py-24 sm:py-32 font-family-class">
-		<div class="mx-auto max-w-7xl px-6 lg:px-8">
-			<div class="mx-auto max-w-2xl">
-				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-				<p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.
-				</p>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Ms Devika BJ, is studying final year Medicine
+			(BAMS) at Sri Kalabyraveshwara Swamy Ayurvedic Medical college in Bangalore. She is a very diligent and
+			bright student. She has scored distinction marks in her 10th & 12th classes and is now pursuing final year
+			Medicine (BAMS). She has achieved this academic feat despite her very modest background and difficult
+			situation at home. In a few months, she would be a full-fledged doctor to serve the society. </p>
 
-				<article class="flex max-w-xl flex-col items-start justify-between font-family-class pt-6">
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> <strong class="font-bold text-black">Devika, has
+				suddenly been diagnosed to have
+				Leukemia and is being treated at the Narayana Hrudayalaya – Mazumdar Shaw Medical Centre, Bangalore. She
+				has
+				been advised Bone Marrow transplant to be done within the next few weeks, at an estimated cost of Rs. 15
+				Lakhs.</strong> The family is in a dire situation. Her parents used to run a small tea-stall on the
+			roadside which
+			has been closed due to the COVID pandemic. Her sister who is working as an Admin Assistant at Prerana Motors
+			is the only breadwinner in their family. They have no means to pay for this treatment. Fortunately, her
+			older sister will be her donor for the Bone Marrow transplant and this will also save on some cost. </p>
 
-					<div class="group relative">
-						<h3 class="mt-3 text-3xl heading-text-color hover:text-orange-600 hover:underline">
-							<a href="#">
-								<span class="absolute inset-0"></span>
-								Boost your conversion rate
-							</a>
-						</h3>
-						<p class="mt-5 line-clamp-3 text-base leading-6 text-gray-600">Illo sint voluptas. Error
-							voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus
-							unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris
-							incididunt.</p>
-					</div>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800">Here is the estimation letter from the hospital- <a
+				href="../public/post-pdf/Hospital_estimation_letter.pdf"
+				class="heading-text-color underline hover:text-orange-600">Hospital Estimation Letter</a> </p>
+		<h3 class="mt-3 text-lg text-black font-bold">
+			Requesting all our friends and relatives to contribute towards this life saving surgery for Devika. Even a
+			donation of a few hundred is welcome.
 
-				</article>
+		</h3>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800">You can donate to Nivethan online at <a
+				href="https://www.instamojo.com/@nivethan/"
+				class="heading-text-color underline hover:text-orange-600">https://www.instamojo.com/@nivethan/
+
+			</a> </p>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800 italic"> All donations are tax deductible under 80G of the Income Tax Act, 1961. </p>
+		<h3 class="mt-3 text-lg text-black font-bold">
+			Request you to support Ms Devika recover and lead a happy life as an Ayurvedic Doctor.
 
 
-			</div>
-		</div>
-	</div>
+
+		</h3>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Looking forward to your kind response,
+
+		</p>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Warm Regards,
+
+
+
+		</p>
+		<p class="mt-5 line-clamp-3 text-lg leading-6 text-gray-800"> Team Nivethan 
+
+
+		</p>
+	</section>
+
 
 	<!-- ******************* -->
 
