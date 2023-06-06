@@ -1000,6 +1000,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
