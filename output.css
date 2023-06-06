@@ -1279,6 +1279,20 @@ video {
   font-family: 'Nunito', sans-serif;
 }
 
+.size-img{
+  height: 50%;
+  width: 50%;
+}
+
+.size-img-second-pic{
+  height: 50%;
+  width: 50%;
+}
+
+.heading-size{
+  font-size: 24px;
+}
+
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
