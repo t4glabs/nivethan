@@ -736,10 +736,6 @@ video {
   flex-grow: 1;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 .origin-top-right {
   transform-origin: top right;
 }
@@ -998,11 +994,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
 }
 
 .pb-4 {
