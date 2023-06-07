@@ -720,6 +720,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -730,14 +734,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
 }
 
 .flex-grow {
@@ -910,8 +906,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'https\:\/\/graph\.org\/file\/b63e3476677980bdb5131\.jpg\'\)\] {
-  background-image: url('https://graph.org/file/b63e3476677980bdb5131.jpg');
+.bg-\[url\(\'public\/img\/hero-img\.jpeg\'\)\] {
+  background-image: url('public/img/hero-img.jpeg');
 }
 
 .bg-cover {
@@ -1698,3 +1694,5 @@ video {
     line-height: 1;
   }
 }
+
+
