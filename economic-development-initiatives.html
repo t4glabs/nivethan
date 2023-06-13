@@ -38,7 +38,7 @@
                     href="index.html">Home</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
-                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:bg-gray-50 hover:text-sky-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:bg-gray-50 hover:text-sky-600  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>About</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -54,12 +54,12 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                        <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <div class="px-2 py-2 bg-white rounded-md shadow text-black">
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="overview.html">Overview</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="our-partners.html">Our Partners</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="legal-info-financials.html">Legal Information & financial</a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                 <!-- ***** -->
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
-                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>Programs</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -83,22 +83,22 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                        <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800 text-black">
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <div class="px-2 py-2 bg-white rounded-md shadow  text-black">
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="nurture-merit.html">Nurture Merit</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="mission-thalassemia.html">Mission Thalassemia</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:text-sky-600 dark-mode:hover:bg-gray-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="economic-development-initiatives.html">Economic Development Initiatives</a>
                         </div>
                     </div>
                 </div>
                 <!-- **** -->
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="blog.html">Blog</a>
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="donate.html">Donate</a>
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50  dark-mode:bg-transparent dark-mode:hover:bg-gray-600  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="contact.html">Contact Us</a>
             </nav>
         </div>
@@ -107,7 +107,7 @@
     <!-- ******************* -->
     <section class="px-6 py-6 lg:px-24 lg:py-8">
         <div class="nurture flex justify-center flex-col items-center px-6 py-6 lg:px-24 lg:py-8">
-            <h1 class="lg:text-3xl text-lg  font-semibold text-color capitalize lg:text-4xl dark:text-white p-4 text-center">
+            <h1 class="lg:text-3xl text-lg  font-semibold text-color capitalize lg:text-4xl p-4 text-center">
                 ECONOMIC DEVELOPMENT INITIATIVES
             </h1>
             <!-- <img src="https://i0.wp.com/nivethan.in/wp-content/uploads/2019/11/quotes-01.png?w=512" alt="img"
@@ -115,7 +115,7 @@
             <div class="lg:px-40 lg:py-6">
                 <div class="bg-gray-50 lg:p-16 p-4 font-family-class">
                     <p
-                        class="leading-8 max-w-4xl font-light text-black font-thin md:text-lg lg:text-lg dark:text-gray-400 p-2">
+                        class="leading-8 max-w-4xl font-light text-black font-thin md:text-lg lg:text-lg  p-2">
                         Nivethan Trust is planning to take up economic development initiatives for poor and marginalized
                         communities in locations that the Trust is already working (Madurai & Dindigul- Tamil Nadu,
                         Hospet-Karnataka and Dhamnagar- Orissa). Initiatives planned are micro enterprise promotion-
