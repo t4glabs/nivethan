@@ -7,11 +7,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 	<link href="output.css" rel="stylesheet">
 
+
     <title>Nivethan</title>
 	<link rel="icon" type="image/x-icon" href="public/img/Nivethan-icon.png" />
 </head>
 
-<body class="bg-white font-sans leading-normal tracking-normal font-serif">
+<body class="bg-gray-5100 font-sans leading-normal tracking-normal font-serif">
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
@@ -23,7 +24,6 @@
                 <a href="index.html"><img
                     src="public/img/Nevthan -logo.webp"
                     alt="logo" class="h-full w-72"></a>
-
                     
                 <button aria-label="hamberger-btn" class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-sky-700">
@@ -42,7 +42,7 @@
                     href="index.html">Home</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
-                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:bg-gray-50 hover:text-sky-600  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:bg-gray-50 hover:text-sky-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>About</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -58,12 +58,12 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                        <div class="px-2 py-2 bg-white rounded-md shadow  text-black">
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <div class="px-2 py-2 bg-white rounded-md shadow text-black">
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="overview.html">Overview</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="our-partners.html">Our Partners</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="legal-info-financials.html">Legal Information & financial</a>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                 <!-- ***** -->
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
-                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        class="text-black flex flex-row items-center w-full px-4 py-2 mt-2 text-base font-semibold text-left bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>Programs</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -87,108 +87,133 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                        <div class="px-2 py-2 bg-white rounded-md shadow  text-black">
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="nurture-merit.html">Nurture Merit</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="mission-thalassemia.html">Mission Thalassemia</a>
-                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600   md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                href="economic-development-initiatives.html">Economic Development Initiatives</a>
+                        <div class="px-2 py-2 bg-white rounded-md shadow text-black">
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="nurture-merit.html">Nurture Merit</a>
+                        <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="mission-thalassemia.html">Mission Thalassemia</a>
+                            <a class="block px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg  hover:text-sky-600  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="economic-development-initiatives.html">Economic Development Initiatives</a>
                         </div>
                     </div>
                 </div>
                 <!-- **** -->
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="blog.html">Blog</a>
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50   md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="donate.html">Donate</a>
-                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50     md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                <a class="text-black px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded-lg hover:text-sky-600 hover:bg-gray-50    md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="contact.html">Contact Us</a>
             </nav>
         </div>
     </div>
-    <!-- **** Header section end *** -->
-    <!-- ******************* -->
-    <section class="px-6 py-6 lg:px-12 lg:py-8">
-        <div class="flex justify-center flex-col items-center p-4">
-            <img src="public/img/donate-us.webp" alt="img" class="">
+    <!-- *** header end **** -->
 
-            <h1 class="lg:text-3xl text-lg font-semibold text-color capitalize lg:text-4xl  p-4 text-center">
-                DONATE
-            </h1>
-            <h1 class="lg:text-3xl text-lg font-semibold text-color capitalize lg:text-4xl  p-4 text-center">
-                Why we need your help
-            </h1>
-            <!-- <img src="public/img/donate-us.webp" alt="img" class=""> -->
-            <div class="lg:px-8 lg:py-12 w-full">
-                <div class="bg-gray-100 lg:p-16 p-4 font-family-class">
-                    <p
-                        class="leading-8 font-light text-black font-thin md:text-lg lg:text-xl  p-2">
-                        Nivethan is an organization solely dedicated to assist the underprivileged and deprived in
-                        society to improve their quality of life.
+
+
+    <!-- Main body  -->
+
+    <section class="">
+
+        <div class="px-6 py-12 bg-gray-50 text-gray-800  lg:text-left">
+
+            <!-- <div class="px-6 py-20 md:px-2 bg-gray-50 text-gray-800 text-center lg:text-left"> -->
+            <div class="container mx-auto xl:px-32">
+                <div class="grid lg:grid-cols-2 gap-6 flex items-center justify-center">
+                    <div class="mb-12 lg:mb-0 sm:place-self-center">
+                        <img src="public/img/over-view-donate.webp" class="h-full w-full rounded-lg drop-shadow-2xl"
+                            alt="Donate Img" />
+                    </div>
+                    <div class="mt-12 lg:mt-0">
+                        <h1
+                            class="lg:text-3xl text-lg font-semibold text-color capitalize lg:text-4xl  p-2 text-center">
+                            WHO WE ARE
+                        </h1>
+                        <p class="text-orange-600 text-center">NON PROFIT</p>
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            Nivethan Trust is a local non-profit from Madurai, dedicated to help those in need in the
+                            fields of health, education and food. </p>
+
+
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            The trust operates on zero administrative costs and distributes all donations directly to
+                            the cause they were raised for. Only when there is a need there is a budget as financial
+                            resources are connected to a purpose.
+                        </p>
+
+
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            The trust operates on zero administrative costs and distributes all donations directly to
+                            the cause they were raised for. Only when there is a need there is a budget as financial
+                            resources are connected to a purpose.
+                        </p>
+
+                        <!-- **************** -->
+
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            Vice versa it is the credo of Nivethan that, especially in the social sector, the needs and
+                            required initiatives are obvious in society. It is more use to identify the problem and then
+                            finding ways to solve it than to first have the means and then looking for a way to spend
+                            them.
+                        </p>
+
+
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            At the moment Nivethan supports Children with Thalassemia in Madurai and around 30 ambitious
+                            students every year for their higher education.
+
+                        </p>
+
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg p-2">
+                            To find out more about our programmes check out the individual pages about
+
+                        </p>
+                        <p
+                            class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg pt-2">
+                            
+                            ●  Madurai Blood Donors
+                        </p>
+                        <p
+                        class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg">
+                        ● Mission Thalassemia
                     </p>
+
                     <p
-                        class="leading-8  font-light text-black font-thin md:text-lg lg:text-lg  p-2">
-                        Whether it is Thalassemia patients, ambitious but poor students or the deserted old aged – all
-                        of them are reliant on financial support and your help! Even a small contribution can make a
-                        change!
-                    </p>
-                    <p
-                        class="leading-8  font-light text-black font-thin md:text-lg lg:text-lg  p-2">
-                        Many times in kind donations for events can be a big relief, just like volunteering services.
-                        Subscribe to our newsletter and news releases to be informed what is needed and how you can help
-                        regularly.
-                    </p>
-                    <p
-                        class="leading-8  font-light text-black font-thin md:text-lg lg:text-lg  p-2">
-                        Check out the project pages for details of needs and what is the amount we need to raise for our
-                        beneficiaries.
-                    </p>
+                    class="font-family-class max-w-2xl font-light text-black font-thin md:text-lg lg:text-lg">
+                    ● Nurture Merit Program
+                </p>
 
-                  
-
-
-           
-                   
-                    <p
-                    class="leading-8 font-light text-black font-thin md:text-lg lg:text-lg  p-2">
-                        You can also donate online – <a href="https://www.instamojo.com/@nivethan/" class="text-sky-600 underline hover:text-orange-600">https://www.instamojo.com/@nivethan/</a> 
-                    </p>
-                    <p
-                    class="leading-8 font-light text-black font-thin md:text-lg lg:text-lg  p-2 italic">
-                        All donations are tax deductable under 80 G of the Income Tax Act, 1961.
-
-
-                    </p>
-                    <p
-                    class="leading-8 font-light text-black font-thin md:text-lg lg:text-lg  p-2">
-                        Nivethan doesn’t substract anything from donations as the trust operates on zero administrative costs. All donations go directly to the cause they were raised for!
-
-                    </p>
-                
-
-                    <div class="p-2 flex items-center justify-center">
-                        <a href="https://www.instamojo.com/@nivethan/"
-                            class="inline-flex items-center justify-center px-12 py-3 text-base font-medium text-center bg-orange-500 text-white border border-gray-300 rounded-3xl hover:bg-sky-500">
-                            Donate Online
-                        </a>
+                        <div class="p-2">
+                            <a href="donate.html"
+                                class="font-family-class inline-flex items-center justify-center px-12 py-3 text-lg font-medium text-center bg-orange-500 text-white border border-gray-300 rounded-3xl hover:bg-sky-500">
+                                Donate
+                            </a>
+                        </div>
                     </div>
 
 
                 </div>
+
+             
             </div>
+
+
         </div>
     </section>
 
 
 
-    <!-- ******************* -->
-
-
-
+    <!--Container-->
     <!-- footer  -->
-
-    <footer class="bg-gray-300 p-4" aria-labelledby="footer-heading">
+    
+    
+	<footer class="bg-gray-300 p-4" aria-labelledby="footer-heading">
 		<h2 id="footer-heading" class="sr-only">Footer</h2>
 		<div class="mx-auto max-w-7xl px-6 pb-4 sm:pt-24 lg:px-8 pt-2 lg:pt-12">
 			<div class="">
@@ -200,7 +225,7 @@
 						<p class="mt-2 text-baseleading-6 text-black font-family-class">Support various programs of
 							Nivethan by
 							donating. All your donations to Nivethan Trust are exempted under 80 (G) of Income Tax
-							Act. <a href="https://www.instamojo.com/@nivethan/" class="text-orange-600 hover:text-sky-600 hover:underline">Donate
+							Act. <a href="donate.html" class="text-orange-600 hover:text-sky-600 hover:underline">Donate
 								online.</a></p>
 
 					</div>
@@ -253,7 +278,7 @@
 						[Nivethan Trust]
 						- All rights reserved.</p>
 	
-                        <p class="mt-12 text-sm leading-5  md:order-1 md:mt-0 text-black font-family-class">
+						<p class="mt-12 text-sm leading-5  md:order-1 md:mt-0 text-black font-family-class">
                             built with 💙 by <a href="https://t4glabs.discourse.group/u?cards=no&group=Tech4Good-Fellows&order=likes_received&period=all"
                                 target="_blank" class="li-text-color  hover:text-orange-600 hover:underline">Tech4Good Fellows</a> &
                             Hosted Freely on <a href="t4glabs.github.io/nivethan/" class="li-text-color  hover:text-orange-600 hover:underline">Github Pages</a>
